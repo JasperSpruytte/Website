@@ -8,7 +8,13 @@
     <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script>
+        $(document).on("mobileinit", function () {
+            $.mobile.ignoreContentEnabled=true;
+        });
+    </script>
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="css/main.min.css"/>
 </head>
 <body>
     <div data-role="page" data-theme="c">
@@ -19,11 +25,12 @@
         <main data-role="main" class="ui-content">
             <p>Hello world.</p>
 
-            <ul>
-                <li id="twitter"><a href="https://twitter.com/JasperSpruytte" alt="Twitter">a</a></li>
-                <li id="Facebook"><a href="https://www.facebook.com/jasper.spruytte" alt="Facebook">b</a></li>
-                <li id="Github"><a href="https://github.com/JasperSpruytte" alt="Github">Q</a></li>
-                <li id="LinkedIn"><a href="http://be.linkedin.com/pub/jasper-spruytte/80/9a0/184/" alt="LinkedIn">j</a></li>
+            <ul class="SocialMediaIconsList">
+                <li id="Twitter" class="SocialMediaIcon"><a href="https://twitter.com/JasperSpruytte" alt="Twitter">a</a></li>
+                <li id="Facebook" class="SocialMediaIcon"><a href="https://www.facebook.com/jasper.spruytte" alt="Facebook">b</a></li>
+                <li id="Github" class="SocialMediaIcon"><a href="https://github.com/JasperSpruytte" alt="Github">Q</a></li>
+                <!--<li id="Github" class="SocialMediaIcon"><a href="" alt="Github">Q</a></li>-->
+                <li id="Linkedin" class="SocialMediaIcon"><a href="http://be.linkedin.com/pub/jasper-spruytte/80/9a0/184/" alt="LinkedIn">j</a></li>
             </ul>
         </main>
 

@@ -1,3 +1,22 @@
+@font-face {
+    font-family: 'socicon';
+    src: url('font/socicon-webfont.eot');
+    src: url('font/socicon-webfont.eot?#iefix') format('embedded-opentype'),
+    url('font/socicon-webfont.woff') format('woff'),
+    url('font/socicon-webfont.ttf') format('truetype'),
+    url('font/socicon-webfont.svg#sociconregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.SocialMediaIconsList
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
 .SocialMediaIcon
 {
     display: inline-block;
@@ -8,29 +27,40 @@
     border-radius: 40px;
 }
 
-    .SocialMediaIcon > a
+    li.SocialMediaIcon > a
     {
         color: #FFFFFF;
         font-size: 37px;
         text-decoration: none;
     }
 
-    #twitter
+        .SocialMediaIcon >a:hover
+        {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        .SocialMediaIcon > a:visited
+        {
+            color: #ffffff;
+        }
+
+    #Twitter
     {
         background-color: rgb(77, 167, 222);
     }
 
-    #facebook
+    #Facebook
     {
         background-color: rgb(62, 91, 152);
     }
 
-    #github
+    #Github
     {
         background-color: rgb(83, 128, 192);
     }
 
-    #linkedin
+    #Linkedin
     {
         background-color: rgb(51, 113, 183);
     }
