@@ -1,0 +1,36 @@
+.SocialMediaIcon
+{
+    display: inline-block;
+    font-family: 'socicon';
+    width: 69px;
+    height: 69px;
+    line-height: 69px;
+    border-radius: 40px;
+}
+
+    .SocialMediaIcon > a
+    {
+        color: #FFFFFF;
+        font-size: 37px;
+        text-decoration: none;
+    }
+
+    #twitter
+    {
+        background-color: rgb(77, 167, 222);
+    }
+
+    #facebook
+    {
+        background-color: rgb(62, 91, 152);
+    }
+
+    #github
+    {
+        background-color: rgb(83, 128, 192);
+    }
+
+    #linkedin
+    {
+        background-color: rgb(51, 113, 183);
+    }
